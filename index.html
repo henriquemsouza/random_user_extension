@@ -1,0 +1,132 @@
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script type="text/javascript" src="lib/jquery-1.9.0.min.js"></script>
+
+  <script type="text/javascript" src="lib/get_data.js"></script>
+
+
+
+</head>
+
+<body>
+  <div id="top-bar">
+    <ol>
+      <li></li>
+      <li class="last">
+        <input type="button" id="genBtn" name="genBtn" value="Gerar" />
+      </li>
+      </dl>
+  </div>
+  <div id="content">
+    <form id="dataForm" name="dataForm">
+      <fieldset class="dataBox">
+        <legend> <i class="material-icons">face</i></legend>
+        <div>
+          <dl>
+            <dt>
+							<label for="name">Nome</label>
+						</dt>
+            <dd>
+              <input type="text" id="name" name="name" class="s-large" />
+            </dd>
+          </dl>
+        </div>
+        <div>
+          <dl>
+            <dt>
+							<label for="email">Email</label>
+						</dt>
+            <dd>
+              <input type="text" id="email" name="email" class="s-large" />
+            </dd>
+          </dl>
+        </div>
+        <div>
+          <dl>
+            <dt>
+							<label for="nickname">Apelido</label>
+						</dt>
+            <dd>
+              <input type="text" id="nickname" name="nickname" maxlength="50" class="s-large" />
+            </dd>
+          </dl>
+        </div>
+
+  </div>
+  </fieldset>
+  <fieldset class="dataBox">
+    <legend><span>Localização</span></legend>
+    <div>
+      <dl>
+        <dt>
+              <label for="city">Cidade</label>
+            </dt>
+        <dd>
+          <input type="text" id="city" name="city" maxlength="50" class="s-large" />
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt>
+              <label for="street">Rua</label>
+            </dt>
+        <dd>
+          <input type="text" id="street" name="street" maxlength="50" class="s-large" />
+        </dd>
+      </dl>
+    </div>
+
+    <div>
+      <dl>
+        <dt>
+              <label for="state">Estado</label>
+            </dt>
+        <dd>
+          <input type="text" id="state" name="state" maxlength="50" class="s-large" />
+        </dd>
+      </dl>
+    </div>
+  </fieldset>
+  <fieldset class="dataBox">
+    <legend>Extra</legend>
+    <div>
+      <dl>
+        <dt>
+							<label for="phone">Telefone</label>
+						</dt>
+        <dd>
+          <input type="text" id="phone" name="phone" maxlength="50" class="s-large" />
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <dt>
+							<label for="dob">Nascimento</label>
+						</dt>
+        <dd>
+          <input type="text" id="dob" name="dob" maxlength="50" class="s-large" />
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <dl>
+        <figure>
+          <img src="" alt="hey" id="user_img" width="104" height="104">
+        </figure>
+      </dl>
+    </div>
+
+  </fieldset>
+
+  </form>
+  </div>
+</body>
+
+</html>
