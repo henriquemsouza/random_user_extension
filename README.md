@@ -2,7 +2,8 @@
 
 
 
-#como rodar a extensao:
+# como rodar a extensao:
+
 0. https://github.com/henriquemsouza/random_user_chrome_extension.git or download
 
 1. Menu > Ferramentas > Extensões.
