@@ -7,6 +7,11 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <script type="text/javascript" src="lib/jquery-1.9.0.min.js"></script>
 
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
+  integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" 
+integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
   <script type="text/javascript" src="lib/get_data.js"></script>
 
 
@@ -15,105 +20,98 @@
 
 <body>
   <div id="top-bar">
-    <ol>
-      <li></li>
-      <li class="last">
-        <input type="button" id="genBtn" name="genBtn" value="Gerar" />
-      </li>
-      </dl>
+        <input type="button" id="genBtn" name="genBtn" class="btn btn-primary" value="Gerar" />
   </div>
-  <div id="content">
+  <div id="content" class="container">
     <form id="dataForm" name="dataForm">
       <fieldset class="dataBox">
-        <legend> <i class="material-icons">face</i></legend>
-        <div>
-          <dl>
-            <dt>
-							<label for="name">Nome</label>
-						</dt>
-            <dd>
-              <input type="text" id="name" name="name" class="s-large" />
-            </dd>
-          </dl>
+        <div class='header-section'> <i class="material-icons">face</i></div>
+        <div class="col-md-12 custom-md">
+              <dt>
+                <label for="name">Nome</label>
+              </dt>
+              <input type="text" id="name" name="name" class="s-large" /> 
+              <button id="copy-btn">
+                <i class="material-icons">content_copy</i>
+              </button>
         </div>
-        <div>
-          <dl>
+        <div class="col-md-12 custom-md">
             <dt>
 							<label for="email">Email</label>
 						</dt>
-            <dd>
-              <input type="text" id="email" name="email" class="s-large" />
-            </dd>
-          </dl>
+           
+            <input type="text" id="email" name="email" class="s-large" />
+            <button id="copy-btn">
+              <i class="material-icons">content_copy</i>
+            </button>
+            
         </div>
-        <div>
-          <dl>
+        <div class="col-md-12 custom-md">
             <dt>
 							<label for="nickname">Apelido</label>
 						</dt>
-            <dd>
+            
               <input type="text" id="nickname" name="nickname" maxlength="50" class="s-large" />
-            </dd>
-          </dl>
+              <button id="copy-btn">
+                <i class="material-icons">content_copy</i>
+              </button>
         </div>
 
+        <br>
   </div>
   </fieldset>
   <fieldset class="dataBox">
-    <legend><span>Localização</span></legend>
-    <div>
-      <dl>
+    <div  class='header-section'><span>Localização</span></div>
+    <div class="col-md-12 custom-md">
         <dt>
               <label for="city">Cidade</label>
-            </dt>
-        <dd>
+        </dt>
           <input type="text" id="city" name="city" maxlength="50" class="s-large" />
-        </dd>
-      </dl>
+          <button id="copy-btn">
+            <i class="material-icons">content_copy</i>
+          </button>
     </div>
-    <div>
-      <dl>
+    <div class="col-md-12 custom-md">
         <dt>
               <label for="street">Rua</label>
-            </dt>
-        <dd>
+        </dt>
           <input type="text" id="street" name="street" maxlength="50" class="s-large" />
-        </dd>
-      </dl>
+          <button id="copy-btn">
+            <i class="material-icons">content_copy</i>
+          </button>
     </div>
 
-    <div>
-      <dl>
+    <div class="col-md-12 custom-md">
         <dt>
               <label for="state">Estado</label>
-            </dt>
-        <dd>
+        </dt>
           <input type="text" id="state" name="state" maxlength="50" class="s-large" />
-        </dd>
-      </dl>
+          <button id="copy-btn">
+            <i class="material-icons">content_copy</i>
+          </button>
+          <br>
     </div>
+    <br>
   </fieldset>
   <fieldset class="dataBox">
-    <legend>Extra</legend>
-    <div>
-      <dl>
+    <div  class='header-section'>Extra</div>
+    <div class="col-md-12 custom-md">
         <dt>
 							<label for="phone">Telefone</label>
-						</dt>
-        <dd>
+				</dt>
           <input type="text" id="phone" name="phone" maxlength="50" class="s-large" />
-        </dd>
-      </dl>
+          <button id="copy-btn">
+            <i class="material-icons">content_copy</i>
+          </button>
     </div>
-    <div>
-      <dl>
+    <div class="col-md-12 custom-md">
         <dt>
 							<label for="dob">Nascimento</label>
-						</dt>
-        <dd>
+					</dt>
           <input type="text" id="dob" name="dob" maxlength="50" class="s-large" />
-        </dd>
-      </dl>
+          <button id="copy-btn">
+            <i class="material-icons">content_copy</i>
+          </button>
     </div>
     <div>
       <dl>

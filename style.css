@@ -54,7 +54,6 @@ fieldset {
   -webkit-padding-after: 0.625em;
   border: 1px solid #f2f2f2;
   border-image: initial;
-  /* margin-bottom: 10px; */
   border-radius: 0 0 3px 3px;
   padding: 0px 0px 15px 0px;
 }
@@ -81,43 +80,32 @@ li a {
   color: #5080d8;
 }
 
-legend {
+.header-section {
   border: 1px solid #E7E7E7;
   border-radius: 3px 3px 0 0;
   background: none repeat scroll 0 0 #F0F0F0;
   font-size: 15px;
   padding: 5px 20px;
   margin: -1px;
-  width: 200px;
+  width: 100%;
+  height: 30px;
 }
 
 #genBtn {
   width: 100%;
-  background-color: #113a86;;
-  border: 1px solid #dcdcdc;
-  color: #FFF;
   font-size: 12px;
   font-weight: bold;
-  -webkit-border-radius: 4px;
-  border-radius: 4px;
-  cursor: hand;
-  height: 100%;
-  padding: 0 5px;
-  text-align: center;
-  -moz-user-select: none;
-  -webkit-user-select: none;
+
 }
 
-#genBtn:hover {
-  background-color: #0c0d0e;
-}
+
 
 input[type=text] {
-  border-radius: 4px;
-  border: 1px solid #bcc6d0;
-  padding: 5px;
-  box-shadow: inset 0px 2px 2px #ddd;
-  width: 200px;
+  width: 85%;
+}
+#copy-btn{
+  width: 30px;
+  height: 30px;
 }
 
 ::-webkit-scrollbar-track-piece {
@@ -137,4 +125,23 @@ input[type=text] {
   outline: 2px solid #fff;
   outline-offset: -2px;
   border: 2px solid #fff;
+}
+
+
+.container {
+  padding-right: 0px !important; 
+  padding-left: 0px !important;
+}
+
+.dataBox{
+  width: 100%;
+}
+
+body{
+  width: 310px;
+}
+
+.custom-md{
+  padding-left: 2px !important;
+  padding-right: 2px !important;
 }
