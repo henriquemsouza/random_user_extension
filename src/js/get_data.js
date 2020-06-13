@@ -6,16 +6,11 @@ $(document).ready(function () {
 
   $("button[id*='copy-btn']").click(function (ev) {
     ev.preventDefault();
-
-    let id = $(this).data("id");
-
-    let selected = $(`#${id}`).select();
     $(".msg-warning").css("display", "block");
-
-    document.execCommand("copy");
-
     $(".msg-warning").delay(2000).fadeOut("slow");
   });
+
+  new ClipboardJS('#copy-btn');
 });
 
 function getr() {

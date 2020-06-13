@@ -9,7 +9,7 @@
 
   <link rel="stylesheet" href="src/css/bootstrap.min.css" >
   <script src="src/js/bootstrap.min.js" ></script>
-
+  <script type="text/javascript" src="src/js/clipboard.min.js"></script>
   <script type="text/javascript" src="src/js/get_data.js"></script>
 
 
@@ -34,7 +34,7 @@
                 <label for="name">Nome</label>
               </dt>
               <input type="text" id="name" name="name" class="s-large" /> 
-              <button id="copy-btn" data-id="name">
+              <button id="copy-btn" data-clipboard-target="#name">
                 <i class="material-icons">content_copy</i>
               </button>
         </div>
@@ -44,7 +44,7 @@
 						</dt>
            
             <input type="text" id="email" name="email" class="s-large" />
-            <button id="copy-btn" data-id="email">
+            <button id="copy-btn" data-clipboard-target="#email">
               <i class="material-icons">content_copy</i>
             </button>
             
@@ -55,7 +55,7 @@
 						</dt>
             
               <input type="text" id="nickname" name="nickname" maxlength="50" class="s-large" />
-              <button id="copy-btn" data-id="nickname">
+              <button id="copy-btn" data-clipboard-target="#nickname">
                 <i class="material-icons">content_copy</i>
               </button>
         </div>
@@ -65,10 +65,10 @@
             <label for="cpf">CPF</label>
           </dt>
             <input type="text" id="cpf" name="cpf" maxlength="50" class="s-large" />
-            <button id="copy-btn" data-id="cpf">
+            <button id="copy-btn" data-clipboard-target="#cpf">
               <i class="material-icons">content_copy</i>
             </button>
-      </div>
+        </div>
 
         <br>
   </div>
@@ -80,7 +80,7 @@
               <label for="city">Cidade</label>
         </dt>
           <input type="text" id="city" name="city" maxlength="50" class="s-large" />
-          <button id="copy-btn"  data-id="city">
+          <button id="copy-btn"  data-clipboard-target="#city">
             <i class="material-icons">content_copy</i>
           </button>
     </div>
@@ -89,7 +89,7 @@
               <label for="street">Rua</label>
         </dt>
           <input type="text" id="street" name="street" maxlength="50" class="s-large" />
-          <button id="copy-btn"  data-id="street">
+          <button id="copy-btn"  data-clipboard-target="#street">
             <i class="material-icons">content_copy</i>
           </button>
     </div>
@@ -99,7 +99,7 @@
               <label for="state">Estado</label>
         </dt>
           <input type="text" id="state" name="state" maxlength="50" class="s-large" />
-          <button id="copy-btn"  data-id="state">
+          <button id="copy-btn"  data-clipboard-target="#state">
             <i class="material-icons">content_copy</i>
           </button>
           <br>
@@ -113,7 +113,7 @@
 							<label for="phone">Telefone</label>
 				</dt>
           <input type="text" id="phone" name="phone" maxlength="50" class="s-large" />
-          <button id="copy-btn" id="copy-btn"  data-id="phone">
+          <button id="copy-btn" id="copy-btn"  data-clipboard-target="#phone">
             <i class="material-icons">content_copy</i>
           </button>
     </div>
@@ -122,7 +122,7 @@
 							<label for="dob">Nascimento</label>
 					</dt>
           <input type="text" id="dob" name="dob" maxlength="50" class="s-large" />
-          <button id="copy-btn" id="copy-btn"  data-id="dob">
+          <button id="copy-btn" id="copy-btn"  data-clipboard-target="#dob">
             <i class="material-icons">content_copy</i>
           </button>
     </div>
