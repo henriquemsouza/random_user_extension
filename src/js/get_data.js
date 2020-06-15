@@ -11,6 +11,8 @@ $(document).ready(function () {
   });
 
   new ClipboardJS('#copy-btn');
+  
+  $("#user_img").attr("src", 'https://randomuser.me/api/portraits/lego/1.jpg');
 });
 
 function getr() {
