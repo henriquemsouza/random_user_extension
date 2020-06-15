@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
 
-  "name": " Random User's",
+  "name": "Random User's",
   "description": "This extension generates information from a fake person to be used in tests",
   "version": "1.3",
 

@@ -1,21 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400&display=swap");
+
 * {
-  margin: 0;
-  padding: 0;
-  border-collapse: collapse;
-  border-spacing: 0;
-  quotes: none;
-  font-size: 13px;
-  font-family: 'Segoe UI', Tahoma, sans-serif;
+  font-family: "Exo 2", sans-serif;
+}
+
+body {
+  padding: 15px;
 }
 
 #top-bar {
-  position: fixed;
   top: 0;
   left: 0;
   z-index: 999;
   width: 100%;
-  height: 34px;
-  background: #FFF;
+  height: 10px;
+  background: #fff;
 }
 
 #content {
@@ -28,34 +27,6 @@ label {
 
 dt {
   color: #4f4f4f;
-}
-
-fieldset.dataBoxConfig dl dt {
-  float: left;
-  margin-right: 10px;
-  width: 14px;
-}
-
-fieldset.dataBoxConfig dl dd {
-  padding: 5px 0px;
-}
-
-fieldset div {
-  padding: 10px 20px 0px 20px;
-}
-
-fieldset {
-  display: block;
-  float: left;
-  -webkit-margin-end: 2px;
-  -webkit-padding-before: 0.35em;
-  -webkit-padding-start: 0.75em;
-  -webkit-padding-end: 0.75em;
-  -webkit-padding-after: 0.625em;
-  border: 1px solid #f2f2f2;
-  border-image: initial;
-  border-radius: 0 0 3px 3px;
-  padding: 0px 0px 15px 0px;
 }
 
 ul {
@@ -81,35 +52,38 @@ li a {
 }
 
 .header-section {
-  border: 1px solid #E7E7E7;
-  border-radius: 3px 3px 0 0;
-  background: none repeat scroll 0 0 #F0F0F0;
   font-size: 15px;
-  padding: 5px 20px;
   margin: -1px;
   width: 100%;
   height: 30px;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.header-section span {
+  padding: 15px 0px 15px 0px;
 }
 
 #genBtn {
   width: 100%;
   font-size: 12px;
   font-weight: bold;
-
 }
 
-
-
-input[type=text] {
-  width: 85%;
+.icon {
+  text-align: center;
 }
-#copy-btn{
-  width: 30px;
-  height: 30px;
+
+.icon .material-icons {
+  font-size: 48px;
+}
+
+.copy-btn {
+  width: 10px;
 }
 
 ::-webkit-scrollbar-track-piece {
-  background-color: #FFF;
+  background-color: #fff;
   -webkit-border-radius: 0;
 }
 
@@ -127,32 +101,48 @@ input[type=text] {
   border: 2px solid #fff;
 }
 
-
 .container {
-  padding-right: 0px !important; 
+  padding-right: 0px !important;
   padding-left: 0px !important;
 }
 
-.dataBox{
+.dataBox {
   width: 100%;
 }
 
-body{
+body {
   width: 310px;
 }
 
-.custom-md{
+.custom-md {
   padding-left: 2px !important;
   padding-right: 2px !important;
 }
 
 .msg-warning {
+  position: fixed !important;
+  top: 20px;
   text-align: center;
-  font-size: 0.6em;
-  background-color: #f1f131;
+  white-space: nowrap;
+  font-size: 0.9em;
   padding: 1px 6px;
   margin: 0 auto;
-  width: 180px;
-  border: 1px solid #050504;
   display: none;
+  opacity: 0.9;
+  z-index: 999 !important;
+}
+
+.user-image {
+  margin-top: 20px;
+}
+
+.user-image figure {
+  display: flex;
+  justify-content: center;
+}
+
+figure img {
+  border-radius: 100px;
+  height: 120px;
+  width: 120px;
 }
