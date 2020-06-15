@@ -20,3 +20,8 @@ git clone https://github.com/henriquemsouza/random_user_chrome_extension.git
 * jquery
 * [Dados usuados para criar os usuarios obtidos de randomuser.me](https://randomuser.me/)
 * HTML e CSS
+
+
+## LICENSE
+
+MIT
