@@ -1,6 +1,6 @@
 $(document).ready(function () {
   getInfoOnLoad();
-  
+
   $("#genBtn").click(function (ev) {
     ev.preventDefault();
     getr();
@@ -33,8 +33,6 @@ $(document).ready(function () {
   });
 
   new ClipboardJS("#copy-btn");
-
-  $("#user_img").attr("src", "https://randomuser.me/api/portraits/lego/1.jpg");
 });
 
 function getr() {
@@ -96,13 +94,23 @@ function getInfoOnLoad() {
   $("#name").val(localStorage.getItem("person_name"));
   $("#email").val(localStorage.getItem("person_email"));
   $("#nickname").val(localStorage.getItem("person_name"));
-  $("#street").val( localStorage.getItem("person_street"));
+  $("#street").val(localStorage.getItem("person_street"));
   $("#city").val(localStorage.getItem("person_city"));
-  $("#state").val( localStorage.getItem("person_state"));
+  $("#state").val(localStorage.getItem("person_state"));
   $("#phone").val(localStorage.getItem("person_phone"));
   $("#dob").val(localStorage.getItem("person_dob"));
   $("#cpf").val(localStorage.getItem("person_cpf"));
-  $("#user_img").attr("src", localStorage.getItem("person_img"));
+
+  let localImage = localStorage.getItem("person_img");
+
+  if (localImage == null) {
+    $("#user_img").attr(
+      "src",
+      "https://randomuser.me/api/portraits/lego/1.jpg"
+    );
+  } else {
+    $("#user_img").attr("src", localImage);
+  }
 }
 
 function randomize(n) {
