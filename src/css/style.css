@@ -70,6 +70,12 @@ li a {
   font-weight: bold;
 }
 
+ #downUser {
+  width: 35%;
+  font-size: 12px;
+  font-weight: bold;
+}
+
 .icon {
   text-align: center;
 }

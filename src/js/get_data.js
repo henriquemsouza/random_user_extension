@@ -4,15 +4,35 @@ $(document).ready(function () {
     getr();
   });
 
+  $("#downUser").click(function (ev) {
+    ev.preventDefault();
+    download(
+      "user.txt",
+      `{
+        \r'nome':  ${$("#name").val()},
+      \r'e_mail': ${$("#email").val()},
+      \r'apelido': ${$("#nickname").val()},
+      \r'cpf': ${$("#cpf").val()},
+      \r'cidade': ${$("#city").val()},
+      \r'rua': ${$("#street").val()},
+      \r'estado': ${$("#state").val()},
+      \r'telefone': ${$("#phone").val()},
+      \r'data_de_nascimento: ${$("#dob").val()},
+      \r'imagem_do_usuario': ${$("#user_img").attr("src")}
+    \r}
+      `
+    );
+  });
+
   $("button[id*='copy-btn']").click(function (ev) {
     ev.preventDefault();
     $(".msg-warning").css("display", "block");
     $(".msg-warning").delay(2000).fadeOut("slow");
   });
 
-  new ClipboardJS('#copy-btn');
-  
-  $("#user_img").attr("src", 'https://randomuser.me/api/portraits/lego/1.jpg');
+  new ClipboardJS("#copy-btn");
+
+  $("#user_img").attr("src", "https://randomuser.me/api/portraits/lego/1.jpg");
 });
 
 function getr() {
@@ -38,8 +58,6 @@ function buildUser(data) {
 
   let formate_date = new Date(user_dob).toISOString().split("T")[0];
   let cpf_value = generateCpf();
-
-  console.log();
 
   $("#name").val(user_name);
   $("#email").val(user_email);
@@ -120,9 +138,25 @@ function generateCpf() {
       d2;
   else cpf = "" + n1 + n2 + n3 + n4 + n5 + n6 + n7 + n8 + n9 + d1 + d2;
 
-  return cpf
+  return cpf;
 }
 
 function calcule(dividend, divider) {
   return Math.round(dividend - Math.floor(dividend / divider) * divider);
+}
+
+function download(filename, text) {
+  var element = document.createElement("a");
+  element.setAttribute(
+    "href",
+    "data:text/plain;charset=utf-8," + encodeURIComponent(text)
+  );
+  element.setAttribute("download", filename);
+
+  element.style.display = "none";
+  document.body.appendChild(element);
+
+  element.click();
+
+  document.body.removeChild(element);
 }
