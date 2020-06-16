@@ -1,4 +1,6 @@
 $(document).ready(function () {
+  getInfoOnLoad();
+  
   $("#genBtn").click(function (ev) {
     ev.preventDefault();
     getr();
@@ -60,19 +62,47 @@ function buildUser(data) {
   let cpf_value = generateCpf();
 
   $("#name").val(user_name);
+  localStorage.setItem("person_name", user_name);
+
   $("#email").val(user_email);
+  localStorage.setItem("person_email", user_email);
+
   $("#nickname").val(user_nick);
+  localStorage.setItem("person_name", user_name);
 
   $("#street").val(user_location);
+  localStorage.setItem("person_street", user_location);
+
   $("#city").val(user_city);
+  localStorage.setItem("person_city", user_city);
+
   $("#state").val(user_state);
+  localStorage.setItem("person_state", user_state);
 
   $("#phone").val(user_phone);
+  localStorage.setItem("person_phone", user_phone);
+
   $("#dob").val(formate_date);
+  localStorage.setItem("person_dob", formate_date);
 
   $("#cpf").val(cpf_value);
+  localStorage.setItem("person_cpf", cpf_value);
 
   $("#user_img").attr("src", user_img);
+  localStorage.setItem("person_img", user_img);
+}
+
+function getInfoOnLoad() {
+  $("#name").val(localStorage.getItem("person_name"));
+  $("#email").val(localStorage.getItem("person_email"));
+  $("#nickname").val(localStorage.getItem("person_name"));
+  $("#street").val( localStorage.getItem("person_street"));
+  $("#city").val(localStorage.getItem("person_city"));
+  $("#state").val( localStorage.getItem("person_state"));
+  $("#phone").val(localStorage.getItem("person_phone"));
+  $("#dob").val(localStorage.getItem("person_dob"));
+  $("#cpf").val(localStorage.getItem("person_cpf"));
+  $("#user_img").attr("src", localStorage.getItem("person_img"));
 }
 
 function randomize(n) {
