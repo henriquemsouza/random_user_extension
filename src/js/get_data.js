@@ -10,15 +10,15 @@ $(document).ready(function () {
       "user.txt",
       `{
         \r'nome':  ${$("#name").val()},
-      \r'e_mail': ${$("#email").val()},
+      \r'eMail': ${$("#email").val()},
       \r'apelido': ${$("#nickname").val()},
       \r'cpf': ${$("#cpf").val()},
       \r'cidade': ${$("#city").val()},
       \r'rua': ${$("#street").val()},
       \r'estado': ${$("#state").val()},
       \r'telefone': ${$("#phone").val()},
-      \r'data_de_nascimento: ${$("#dob").val()},
-      \r'imagem_do_usuario': ${$("#user_img").attr("src")}
+      \r'dataDeNascimento: ${$("#dob").val()},
+      \r'imagemDoUsuario': ${$("#user_img").attr("src")}
     \r}
       `
     );
