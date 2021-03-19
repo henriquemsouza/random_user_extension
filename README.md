@@ -1,12 +1,12 @@
-# Random_user
+# Random user
 
-
+[Mozilla version](https://addons.mozilla.org/en-US/firefox/addon/simple-random-user-s/)
 
 ### como rodar a extensao:
 
 0. git clone ou download do projeto
 ```
-git clone https://github.com/henriquemsouza/random_user_chrome_extension.git
+git clone https://github.com/henriquemsouza/random_user_extension.git
 ```
 
 1. Menu > Ferramentas > Extensões.
@@ -20,6 +20,9 @@ git clone https://github.com/henriquemsouza/random_user_chrome_extension.git
 * jquery
 * [Dados usuados para criar os usuarios obtidos de randomuser.me](https://randomuser.me/)
 * HTML e CSS
+
+
+
 
 
 ## LICENSE
