@@ -23,6 +23,9 @@ git clone https://github.com/henriquemsouza/random_user_extension.git
 
 
 
+### Obs
+
+zip -r -FS ./random_user.zip * --exclude '*.git*'   
 
 
 ## LICENSE
